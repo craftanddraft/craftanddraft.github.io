@@ -3142,6 +3142,11 @@ input, select, textarea {
 			background-color: transparent;
 		}
 
+		.wrapper.style6 {
+			background-color: transparent;
+			padding: 9em 3em 9em 3em ;
+		}
+
 		.wrapper.style5 {
 			background-color: #ffffff;
 			color: #4E4852;
