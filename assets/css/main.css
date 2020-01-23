@@ -3142,11 +3142,6 @@ input, select, textarea {
 			background-color: transparent;
 		}
 
-		.wrapper.style6 {
-			background-color: transparent;
-			padding: 9em 3em 9em 3em ;
-		}
-
 		.wrapper.style5 {
 			background-color: #ffffff;
 			color: #4E4852;
@@ -3894,10 +3889,9 @@ input, select, textarea {
 
 		}
 
-		body.is-mobile #main > header {
-			background-attachment: fixed;
-		}		
-
+	body.is-mobile #main > header {
+		background-attachment: scroll;
+	}
 
 /* Footer */
 
@@ -3997,28 +3991,20 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #page-wrapper {
-		background: block;
+		background: none;
 	}
 
-	body.is-mobile.landing #banner {
+	body.is-mobile.landing #banner,
+	body.is-mobile.landing .wrapper.style4 {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-attachment: scroll;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
 	body.is-mobile.landing #footer {
-		background-color: rgba(16, 11, 11, 0.8);
+		background-color: #1d242a;
 	}
