@@ -126,7 +126,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 755px) {
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -3708,7 +3708,6 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 3em 5em 3em ;
-				height: auto;
 				min-height: 0;
 			}
 
