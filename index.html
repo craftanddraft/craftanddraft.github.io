@@ -19,7 +19,25 @@
   			gtag('js', new Date());
   			gtag('config', 'UA-155221746-1');
 		</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script>
+			var images = ['lifestyle04.jpeg', 'lifestyle03.jpeg', 'lifestyle02.jpeg', 'lifestyle05.jpeg', 'lifestyle01.jpeg'];
+   			$(function () {
+				var i = 0;
+				var header = $('#page-wrapper');
+				setInterval(function () {
+					i++;
+					if (i == images.length) {i = 0;}
+					header.css('transition', 'background-image 2s ease-in-out');
+					header.css('background-image', '-moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/' + images[i] + ')');
+					header.css('background-image', '-webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/' + images[i] + ')');
+					header.css('background-image', '-ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/' + images[i] + ')');
+					header.css('background-image', 'linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/' + images[i] + ')');
+				}, 10000);
+			});
+		</script>
 	</head>
+
 	<body class="landing is-preload">
 
 		<!-- Page Wrapper -->
@@ -92,26 +110,6 @@
 							</div>
 						</section>
 					</section>
-
-			<!-- Slider -->	
-				<section id="slider" class="wrapper alt style2">
-					<div class="bannerslide" data-height="600" data-width="100%" data-slide-speed="900" data-autoslide="3000">
-						<img src="images/lifestyle02.jpeg" class="slider">
-						<img src="images/lifestyle03.jpeg" class="slider">
-						<img src="images/lifestyle04.jpeg" class="slider">
-						<img src="images/lifestyle05.jpeg" class="slider">
-						<div class="previous"></div>
-						<div class="next"></div>                                
-						<div class="links">
-							<a href="2"></a>
-							<a href="3"></a>
-							<a href="4"></a>
-							<a href="5"></a>
-						</div>
-					  </div>
-					  <script src="assets/js/slider.min.js"></script>
-				</section>
-					
 
 			<!-- Three -->
 				<section id="one" class="wrapper style1 special">
