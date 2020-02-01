@@ -154,6 +154,11 @@ input, select, textarea {
 		font-weight: 600;
 	}
 
+	high {
+		color: #fff;
+		font-weight: 600;
+	}
+
 	em, i {
 		font-style: italic;
 	}
@@ -215,8 +220,9 @@ input, select, textarea {
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 1.4em;
 		line-height: 1.5em;
+		font-weight: 600;
 	}
 
 	sub {
@@ -1778,10 +1784,15 @@ input, select, textarea {
 		margin: 0 0 3.5em 0;
 	}
 
-		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
+		header.major h2, header.major h3, header.major h4, header.major h5 {
 			border-bottom: solid 2px #fff;
 			display: inline-block;
 			padding-bottom: 1em;
+			position: relative;
+		}
+		header.major h6 {
+			display: inline-block;
+			padding-bottom: 0.5em;
 			position: relative;
 		}
 
@@ -2788,7 +2799,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 6em 0 2em 0 ;
 	}
 
 		.wrapper > .inner {
@@ -3651,7 +3662,7 @@ input, select, textarea {
 			-ms-transform: translateY(0);
 			transform: translateY(0);
 			border: none;
-			bottom: 2.5em;
+			bottom: 3.5em;
 			color: inherit;
 			font-size: 0.8em;
 			height: 8.5em;
