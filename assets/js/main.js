@@ -81,3 +81,25 @@
 		}
 
 })(jQuery);
+
+function selectLanguage(){
+	var url_string = window.location.href;
+	var url = new URL(url_string);
+	var lang = url.searchParams.get("lang");
+	if ((lang !== undefined && lang != null) || lang == 'en') {
+		return
+	}
+	var userLang = navigator.language || navigator.userLanguage;
+	switch(userLang){
+		case 'fr-FR':
+		case 'fr-CA':
+		case 'fr':
+			window.location.href = './fr/index.html';
+			break;
+		case 'es':
+		case 'es-AR':
+		case 'es-ES':
+			window.location.href = './es/index.html';
+			break;
+	}
+}
