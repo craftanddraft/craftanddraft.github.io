@@ -21,7 +21,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
   			gtag('config', 'UA-155221746-1');
 		</script>
 	</head>
-	<body class="landing is-preload">
+	<body class="landing is-preload" onload="javascript:selectLanguage()">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -181,6 +181,24 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				function selectLanguage(){
+					
+					var userLang = navigator.language || navigator.userLanguage;
+					switch(userLang){
+						case 'fr-FR':
+						case 'fr-CA':
+						case 'fr':
+							window.location.href = './fr/index.html';
+							break;
+						case 'es':
+						case 'es-AR':
+						case 'es-ES':
+							window.location.href = './es/index.html';
+							break;
+					}
+				}
+			  </script>
 
 	</body>
 </html>
