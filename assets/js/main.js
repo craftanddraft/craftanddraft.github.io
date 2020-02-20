@@ -90,16 +90,9 @@ function selectLanguage(){
 		return
 	}
 	var userLang = navigator.language || navigator.userLanguage;
-	switch(userLang){
-		case 'fr-FR':
-		case 'fr-CA':
-		case 'fr':
-			window.location.href = './fr/index.html';
-			break;
-		case 'es':
-		case 'es-AR':
-		case 'es-ES':
-			window.location.href = './es/index.html';
-			break;
-	}
+	if (userLang.startsWith('fr'))
+		window.location.href = './fr/index.html';
+	else if (userLang.startsWith('es'))
+		window.location.href = './es/index.html';
+	return;
 }
