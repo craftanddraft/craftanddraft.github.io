@@ -105,6 +105,7 @@
 
 					// Already hidden? Bail.
 						if (!config.target.hasClass(config.visibleClass))
+							a = "do_nothing"
 							return;
 
 					// If an event was provided, cancel it.
