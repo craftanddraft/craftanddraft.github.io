@@ -92,7 +92,7 @@ function selectLanguage(){
 	var userLang = navigator.language || navigator.userLanguage;
 	if (userLang.startsWith('fr'))
 		window.location.href = './fr/index.html';
-	//else if (userLang.startsWith('es'))
-	//	window.location.href = './es/index.html';
+	else if (userLang.startsWith('es'))
+		window.location.href = './es/index.html';
 	return;
 }
