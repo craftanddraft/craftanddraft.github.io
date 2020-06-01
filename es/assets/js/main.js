@@ -81,3 +81,29 @@
 		}
 
 })(jQuery);
+
+function selectOrderLanguage(){
+	var url_string = window.location.href;
+	var url = new URL(url_string);
+	var region = url.searchParams.get("region");
+	if (region !== undefined && region != null){
+		if (region == 'global') 
+			return
+		if (region == 'argentina'){
+			window.location.href = './order_ar.html';
+			return
+		}
+	}
+	var userLang = navigator.language || navigator.userLanguage;
+	fetch('https://extreme-ip-lookup.com/json/')
+		.then( res => res.json())
+		.then(response => {
+			console.log("Country: ", response.country);
+			if (response.country.startsWith('Argentina'))
+				window.location.href = './order_ar.html';
+ 		})
+ 		.catch((data, status) => {
+			return
+ 	})
+	return
+}
