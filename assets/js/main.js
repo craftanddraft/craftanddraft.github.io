@@ -96,13 +96,3 @@ function selectLanguage(){
 		window.location.href = './es/index.html';
 	return;
 }
-
-function showManual(){
-	var url_string = window.location.href;
-	var url = new URL(url_string);
-	var manual = url.searchParams.get("manual");
-	if (manual !== undefined) {
-		window.location.href = 'manual/C&D-users-reference-manual.pdf';
-	}
-	return
-}
