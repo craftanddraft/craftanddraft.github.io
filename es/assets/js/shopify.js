@@ -74,7 +74,7 @@
     },
     "width": "100%",
     "text": {
-      "button": "BUY NOW"
+      "button": "COMPRAR"
     },
     "googleFonts": [
       "Open Sans"
