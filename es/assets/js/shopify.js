@@ -141,7 +141,6 @@
       "total": "Subtotal",
       "button": "Checkout"
     },
-    "popup": false,
     "googleFonts": [
       "Open Sans"
     ]
