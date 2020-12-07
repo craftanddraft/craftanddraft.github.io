@@ -93,7 +93,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #000000; /*#bg*/
+		background: #ffa800; /*#bg*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1966,7 +1966,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #000000; /*#bg*/
+			background: #ffa800; /*#bg*/
 			color: #fff;
 			content: '\f00c';
 		}
@@ -2993,7 +2993,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background-color: #000000; /*#bg*/
+			background-color: #00000; /*#bg*/
 		}
 
 		.wrapper.style3 {
@@ -3165,11 +3165,11 @@ input, select, textarea {
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #000000; /*#bg*/
+				color: #ffa800; /*#bg*/
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #000000; /*#bg*/
+				color: #ffa800; /*#bg*/
 			}
 
 			.wrapper.style5 hr {
@@ -3197,7 +3197,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 label {
-				color: #000000; /*#bg*/
+				color: #ffa800; /*#bg*/
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3213,7 +3213,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style5 select option {
-					color: #000000; /*#bg*/
+					color: #ffa800; /*#bg*/
 					background: #ffffff;
 				}
 
@@ -3229,7 +3229,7 @@ input, select, textarea {
 
 			.wrapper.style5 input[type="checkbox"]:checked + label:before,
 			.wrapper.style5 input[type="radio"]:checked + label:before {
-				background: #000000; /*#bg*/
+				background: #ffa800; /*#bg*/
 				color: #ffffff;
 			}
 
@@ -3270,7 +3270,7 @@ input, select, textarea {
 				}
 
 			.wrapper.style5 table th {
-				color: #000000; /*#bg*/
+				color: #ffa800; /*#bg*/
 			}
 
 			.wrapper.style5 table thead {
@@ -3291,7 +3291,7 @@ input, select, textarea {
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
 				box-shadow: inset 0 0 0 2px #dfdfdf;
-				color: #000000; /*#bg*/
+				color: #ffa800; /*#bg*/
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
@@ -3462,7 +3462,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #000000; /*#bg*/
+		background: #ffa800; /*#bg*/
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3715,7 +3715,7 @@ input, select, textarea {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #000000;
+			background: #ffa800;
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -3743,11 +3743,10 @@ input, select, textarea {
 				#banner .more {
 					display: block;
 				}
-
+				
 				#banner h2:before, #banner h2:after {
 					height: 3px;
-				}				
-
+				}	
 		}
 
 	body.is-preload #banner h2 {
